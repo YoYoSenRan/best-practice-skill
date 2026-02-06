@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/bps",
+  "name": "@bps/cli-internal",
   "version": "0.1.0",
   "private": true,
   "bin": {
@@ -12,4 +12,3 @@
   },
   "description": "BPS CLI for Claude and Codex"
 }
-

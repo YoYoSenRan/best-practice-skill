@@ -1,17 +1,27 @@
 {
-  "name": "bps-monorepo",
-  "private": true,
+  "name": "best-practice-skill",
   "version": "0.1.0",
   "description": "BPS cross-agent toolkit monorepo (Claude + Codex)",
   "workspaces": [
     "packages/*"
   ],
+  "bin": {
+    "bps": "packages/cli/bin/bps.js"
+  },
+  "files": [
+    "packages/**",
+    "docs/**",
+    "README.md",
+    "scripts/check-workspaces.mjs"
+  ],
   "scripts": {
     "lint": "node scripts/check-workspaces.mjs",
     "doctor": "node packages/cli/bin/bps.js doctor",
-    "bps": "node packages/cli/bin/bps.js"
+    "bps": "node packages/cli/bin/bps.js",
+    "pack:check": "npm pack --dry-run"
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "license": "MIT"
 }
