@@ -1,0 +1,15 @@
+{
+  "name": "@your-org/bps",
+  "version": "0.1.0",
+  "private": true,
+  "bin": {
+    "bps": "bin/bps.js"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "@bps/core": "0.1.0",
+    "@bps/installer": "0.1.0"
+  },
+  "description": "BPS CLI for Claude and Codex"
+}
+

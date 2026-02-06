@@ -1,0 +1,17 @@
+{
+  "name": "bps-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "BPS cross-agent toolkit monorepo (Claude + Codex)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "node scripts/check-workspaces.mjs",
+    "doctor": "node packages/cli/bin/bps.js doctor",
+    "bps": "node packages/cli/bin/bps.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

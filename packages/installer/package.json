@@ -1,0 +1,11 @@
+{
+  "name": "@bps/installer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "dependencies": {
+    "@bps/templates": "0.1.0"
+  },
+  "description": "Installer for Claude and Codex integrations"
+}
+
